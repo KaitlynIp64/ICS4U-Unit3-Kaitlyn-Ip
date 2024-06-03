@@ -68,7 +68,7 @@ final class ReverseString {
         if (input_string.length() > 0) {
             final char myChar = input_string.charAt(0);
             input_string = input_string.substring(1, input_string.length());
-            input_string = reverse_string(input_string);
+            input_string = reverseString(input_string);
             input_string += myChar;
         }
         return input_string;
