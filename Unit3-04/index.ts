@@ -17,6 +17,8 @@ import { createPrompt } from 'bun-promptx'
  */
 
 // this function runs the algorithm to solve the tower of Hanoi
+// checks if number of disks being moved is singular before continuing
+// ensures that each numbered disk must not be > the bottom disk
 function hanoi(numberOfDisks: number, startPeg: number, endPeg: number) {
   if (numberOfDisks == 1) {
     console.log(`Move disk ${numberOfDisks} from peg ${startPeg} to ${endPeg}`)
