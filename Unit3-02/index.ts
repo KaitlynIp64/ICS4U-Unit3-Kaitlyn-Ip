@@ -12,12 +12,15 @@ function factorial(inputInt: number): number {
   /*
   * This calculates the factorial using recursion.
   */
+  // performs binary search on sorted array to find index of userNumber
   if (inputInt < 0) {
+    // indicates number is not found
     return -1
   } else {
     if (inputInt <= 1) {
       return 1
     } else {
+      // if inputInt > 1, function calculates factorial
       return (inputInt * factorial(inputInt - 1))
     }
   }

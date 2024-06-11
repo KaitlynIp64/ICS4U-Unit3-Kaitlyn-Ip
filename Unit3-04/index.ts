@@ -15,6 +15,8 @@ import { createPrompt } from 'bun-promptx'
  * @param startPeg the starting number of pegs
  * @param endPeg the ending number of pegs
  */
+
+// this function runs the algorithm to solve the tower of Hanoi
 function hanoi(numberOfDisks: number, startPeg: number, endPeg: number) {
   if (numberOfDisks == 1) {
     console.log(`Move disk ${numberOfDisks} from peg ${startPeg} to ${endPeg}`)
@@ -32,6 +34,8 @@ const endPeg: number = 3
 // User input
 const input: number = createPrompt('Enter number of disks: ').value
 
+// checks if input number is valid
+// pops out invalid if number is under the range (input < 0)
 if (isNaN(input) || input < 1) {
   console.log('Not a valid number.')
 } else {
