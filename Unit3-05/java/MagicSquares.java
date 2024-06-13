@@ -117,3 +117,4 @@ final class MagicSquares {
         System.out.println("\nDone.");
     }
 }
+
